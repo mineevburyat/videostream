@@ -5,19 +5,31 @@
 <title>Video converter</title>
 <style>
     body {
-        width: 35em;
+        width: 1024px;
         margin: 0 auto;
         font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+    .preview {
+        width: 150px;
+    }
+    .link {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+    }
+    .text {
+        display: block;
+        align-self: center;
     }
 </style>
 </head>
 <body>
 <h1>Список видеокамер</h1>
 <ul>
-	<li>1. rtsp://admin:amt-gr2022@90.188.35.109:570/unicast/c4/s0/live <a href=""><img src="1.jpeg"></a></li>
-	<li>2. rtsp://admin:amt-gr2022@90.188.35.109:570/unicast/c5/s0/live <a href=""><img src="2.jpeg"></a></li>
-	<li>3. rtsp://admin:Admin54321@90.188.48.200:554 <a href=""><img src="3.jpeg"></a></li>
-	<li>4. rtsp://admin:Admin54321@90.188.48.200:555 <a href=""><img src="4.jpeg"></a></li>
+	<li class="link"><span class="text">rtsp://admin:amt-gr2022@90.188.35.109:570/unicast/c4/s0/live</span> <a href=""><img class="preview" src="1.jpeg"></a></li>
+	<li class="link"><span class="text">rtsp://admin:amt-gr2022@90.188.35.109:570/unicast/c5/s0/live</span><a href=""><img class="preview" src="2.jpeg"></a></li>
+	<li class="link"><span class="text">rtsp://admin:Admin54321@90.188.48.200:554</span><a href=""><img class="preview" src="3.jpeg"></a></li>
+	<li class="link"><span class="text">rtsp://admin:Admin54321@90.188.48.200:555</span><a href=""><img class="preview" src="4.jpeg"></a></li>
 	
 </ul>
 
